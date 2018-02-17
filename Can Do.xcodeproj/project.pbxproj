@@ -22,6 +22,7 @@
 		66D22A7720384A1C00B17433 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66D22A7A20384A1C00B17433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66D22A7C20384A1C00B17433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66D22A8220384DE800B17433 /* Can Do.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Can Do.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		66D22A6F20384A1C00B17433 /* Can Do */ = {
 			isa = PBXGroup;
 			children = (
+				66D22A8220384DE800B17433 /* Can Do.entitlements */,
 				66D22A7020384A1C00B17433 /* AppDelegate.swift */,
 				66D22A7220384A1C00B17433 /* ViewController.swift */,
 				66D22A7420384A1C00B17433 /* Main.storyboard */,
@@ -97,6 +99,11 @@
 					66D22A6C20384A1C00B17433 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -274,6 +281,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Can Do/Can Do.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QNT889H433;
 				INFOPLIST_FILE = "Can Do/Info.plist";
@@ -289,6 +297,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Can Do/Can Do.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QNT889H433;
 				INFOPLIST_FILE = "Can Do/Info.plist";
